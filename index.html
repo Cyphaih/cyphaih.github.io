@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilyas Vakkas Celik - Game Developer & Programmer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <h1 class="navbar-name">Ilyas Vakkas Celik</h1>
+                <p class="navbar-subtitle">Gamedeveloper & Programmer</p>
+            </div>
+            <div class="navbar-nav">
+                <button class="nav-button" data-page="work">Work</button>
+                <button class="nav-button" data-page="about">About</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Work Page -->
+    <div class="page work-page" id="work-page">
+        <div class="page-content">
+            <!-- Hero Video -->
+            <button class="front-video-btn" aria-label="Massacrade front video" id="front-video">
+                <video autoplay muted loop>
+                    <source src="sources/MassacradeTrailer.mp4" type="video/mp4">
+                    
+                    
+                </video>
+                <span class="video-overlay">Massacrade</span>
+            </button>
+
+            <!-- Work Samples Grid -->
+            <div class="work-samples">
+                <button class="work-card" data-id="1">
+                    <span class="work-card-image">
+                        <img src="sources/MassacradeSquare.png" alt="Massacrade Icon">
+                    </span>
+                    <span class="work-card-title">Massacrade</span>
+                    <span class="work-card-description">Game Project</span>
+                </button>
+
+                <button class="work-card" data-id="2">
+                    <span class="work-card-image">
+                        <img class="img-1" src="sources/DialogueToolNode.png" alt="Dialogue Tool Node">
+                        <img class="img-2" src="sources/DialogueTool.png" alt ="Dialogue Tool">
+                    </span>
+                    <span class="work-card-title">Gamedev & Tooling</span>
+                    <span class="work-card-description">Game development</span>
+                </button>
+
+                <button class="work-card" data-id="3">
+                    <span class="work-card-image">
+                        <img src="sources/NPCIcon.png" alt="NPC Icon">
+                    </span>
+                    <span class="work-card-title">NPC & AI Behavior</span>
+                    <span class="work-card-description">Advanced AI in Games</span>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Detail Panel -->
+    <div class="panel-overlay" id="panel-overlay"></div>
+    <div class="detail-panel" id="detail-panel">
+        <button class="panel-close" id="panel-close">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <div class="panel-content" id="panel-content">
+            <h2 class="detail-panel-title" id="detail-panel-title">Not Loaded</h2>
+            <p class="detail-panel-description" id="detail-panel-description">Description not loaded</p>
+            <div class="detail-panel-body" id="detail-panel-body"></div>
+            
+        </div>
+    </div>
+
+    <!-- About Page -->
+    <div class="page about-page" id="about-page">
+        <div class="page-content">
+            <div class="about-container">
+                <!-- Top Section -->
+                <div class="about-top">
+                    <div class="about-info">
+                        <h2>About Me</h2>
+                        Hello, I’m Ilyas! I’m a game programmer currently studying Animation & Game at the Hochschule Darmstadt.<br> <br>
+                        I’ve enjoyed playing video games for as long as I can remember, and now I’m excited about creating them  myself and possibly alongside other passionate developers.
+                    </div>
+                    <div class="about-card">
+                        <div class="about-image">
+                            <img src="sources/Mepic.jpg" alt="Ilyas">
+                        </div>
+                        <div class ="about-card-content">
+                            <div class ="namecard-header"><h2>Ilyas Vakkas Celik</h2></div>
+                            <div class ="namecard-subheader"><p>Game Development & Programmer</p></div>
+                            <div><p>Germany</p></div>
+                            <div><p>Ilyasv.Celik@gmail.com</p></div>
+                            <div class="namecard-links"><a href="https://github.com/Cyphaih">Github</a>
+                            <a href="https://linkedin.com/in/ilyas-vakkas-celik-2a811433b">LinkedIn</a></div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- bottom -->
+                <div class="about-bottom">
+                    
+                    <div class="tabs-container">
+                        <div class="tabs-header">
+                            <button class="tab-button active" data-tab="skills">Skills</button>
+                            <button class="tab-button" data-tab="interests">Interests</button>
+                            
+                        </div>
+
+                        <div class="tab-content" id="skills">
+                            <div class="skill-container">
+                                <div class="skill-topic">
+                                    <strong>Programming: </strong> 
+                                </div>
+                                <div class="skill-content">
+                                    C++, C#
+                                </div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="skill-topic">
+                                    <strong>Game Engines: </strong>
+                                </div>
+                                <div class="skill-content">
+                                    Unreal Engine, Unity
+                                </div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="skill-topic">
+                                    <strong>Version Control:</strong>
+                                </div>
+                                <div class="skill-content">
+                                    Git
+                                </div>
+                            </div>
+                            <div class="skill-container">
+                                <div class="skill-topic">
+                                    <strong>Game Development:</strong>
+                                </div>
+                                <div class="skill-content">
+                                    Game Mechanics Programming, <br>NPC-AI Behavior,  <br>Editor Tools Development
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content" id="interests">
+                            I have several topics regarding Game Development I would like to dive into.<br>
+                            Currently, I am working on a small <strong>3D Audio Application</strong> using Windows COM.<br>
+                            
+                            
+                            You can look into its <a href="https://github.com/Cyphaih/3DAudio">GitHub Repository</a> if you are interested. <br> <br>
+                            
+                            Areas I want to further look into:<br>
+                            <div class="learn-container">
+                                
+                                    - <strong>Engine Programming</strong><br>
+                                    - <strong>Data Oriented Design</strong><br>
+                                    - <strong>Graphics Programming & Shader</strong>
+                                
+                            </div>
+                            
+                            
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <template id="1">
+        <div class="massacrade-project-panel">
+            <div class="massacrade-project-panel-body">
+                <div class="project-panel-tags">
+                    <div>Unreal Engine 5</div>
+                    <div>Programmer</div>
+                    <div>C++</div>
+                    <div>NPC Behaviour</div>
+                    <div>Motion Capture</div>
+                </div>
+                <div class = detail-body-sub>  
+                    <h2>
+                        Project Overview
+                    </h2>
+                    <p>
+                        Massacrade is a First-Person Parkour Melee Slasher set in an elegant city where you take control of Evelyn, a brutal rogue assassin on the run, using her acrobatic movement and combat expertise to escape.<br><br>
+                        
+                        Our goal with this project was to create a Vertical slice with great game feel and visuals, preferring a shorter experience with more depth than a longer Experience that lacks the necessary polish in the given short timeframe of a semester.<br><br>
+                        Here are some links if you would like to see or try it yourself: <a href="https://thesenate-66.itch.io/massacrade">Itch.io</a> & <a href="https://youtu.be/Z23ZEtse-Ls?si=hTGJBH-ihdGdRCIW">Short Walkthrough Video</a>
+                        
+                    </p>
+                    
+                    <h2>
+                        My Contribution
+                    </h2>
+                    
+                    <p>
+                        I worked on this project as my sixth semester project at the University of Applied Sciences Darmstadt.
+                        In our Team of five Bachelor Students and 2 Master Students, I took over the role of a main Programmer and secondary Technical Artist and was responsible for the Enemy Behavior including their Animations from Motion capture and their Cleanup after, General Behavior like the Slow motion implementation, Sound implementation and some player related Actor Components.<br><br>
+                        I took the opportunity to further develop my Unreal Engine knowledge by creating a Plugin for NPC Vision or use built in Plugins like Unreals Gameplay Ability System or State Trees, all in both C++ and Blueprint.<br><br>
+                        
+                    </p>
+                    
+                </div>
+            </div>
+            
+            <div class="massacrade-project-panel-image">
+                <img src = "sources/MassacradeFull.png" alt = "Massacrade Panel Picture">
+            </div>
+        </div>
+    </template>
+    
+    
+    <template id="2">
+        <div class="tooling-project-panel">
+            <div class="tooling-project-panel-body">
+                <div class="project-panel-tags">
+                    <div>Tooling</div>
+                    <div>Unreal Engine 5</div>
+                    <div>C++</div>
+                    <div>Unity</div>
+                    <div>C#</div>
+                </div>
+                <div class = detail-body-sub>
+                    <h2>
+                        Tooling
+                    </h2>
+                    <p>
+                        During my time in this study course I noticed that I enjoy creating editor tools for a project quiet a lot. It was important to me that I not only improve my assets to be more usable by non coders during production, but also create specified tools for my fellow artists and designers.
+                        
+                    </p>
+                    <h2>
+                        Custom Dialogue Tool
+                    </h2>
+                    <p>
+                        During my 5th semester Project 'BrotherBlood' I made a simple visual Dialogue Tool in Unity.<br>
+                        I looked into existing tools and decided that they were too complex for my team to just use for the limited functionality necessary and I also wanted to avoid to create all Dialogue with prefabs. <br>
+                        
+                        So using Unitys UIToolkit, I created a node based system you can see on the right. The picture at the top shows a dialogue node with the necessary options of dialogue flow for our specific needs. Five values were adjustable: The FMOD event selection, The extra time the text should stay visible after the audio is done, A pause time until the next Node is played, whether the Brother or the Player are talking and lastly the text that should be displayed (The 2 in the example node at the bottom).<br>
+                        The picture below shows how the nodes are connected in one Dialogue Object.
+                    </p>
+
+                    <h2>
+                        Animation Cleanup Tools
+                    </h2>
+                    
+                    <p>
+                        I made two short tools for the Motion Capture cleanup in C++ for Unreal Engine of the sixth semester project 'Massacrade' oh which both turned out to be essential for the mass of cleanup of over 60 used animation used from the Motion Capture recordings.<br><br>
+                        One tool is a simple loop modifier that changes the end of the animation to lerp into the animations start transform with an optional flag for ignoring the root transform for rootmotion animations.<br>
+                        The other copies the start transforms of one animations bone chain starting from a bone name and copies these transforms into another animations bonechain with a flag to ignore starting bone, which I used to fix all the finger animations as they were not recorded through Motion Capture and I used it for the Snipers posture as well.
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="tooling-project-panel-images">
+                <img src="sources/DialogueToolNode.png" alt="Dialogue Tool Node">
+                <img src="sources/DialogueTool.png" alt ="Dialogue Tool">
+            </div>
+        </div>
+    </template>
+    
+    
+    <template id="3">
+        <div class="npc-project-panel">
+            <div class="npc-project-panel-body">
+                <div class="project-panel-tags">
+                    <div>NPC</div>
+                    <div>In Game AI</div>
+                    <div>EQS</div>
+                    <div>Navigation</div>
+                </div>
+                <div class = detail-body-sub>
+                    <h2>
+                        Overview
+                    </h2>
+                    <p>
+                        Throughout my time in the university and through personal projects I have learned a variety of different tools and methods to create NPC AIs in projects. Be it State Machines, Behavior Trees or Unreal EnginesState Tree for Task Execution, Spatial Query Systems for World Context dependant actions or Utility AI and Goap for Goal determination and their execution plan.
+                    </p>
+                    
+                    <h2>
+                        EQS in unity
+                    </h2>
+                    <p>
+                        During an elective in my sixth Semester I made a Spatial Query System like Unreal Engines Environmental Query System.
+                        As a functional prototype I used a demo scene with a basic Actor that tries to stay in cover of the moving Camera.
+                        The Blue sphere represents the head of which its center tries to stay in Cover and the yellow spots are possible vantage positions to check if the camera is visible from their position for a potential lean for Line of Sight.
+                        The tests for avaluation are Center Line of Sight, to filter out all visible points, Lean line of sight for vantage, distance to the player and distance to the wall between player and actor.<br>
+                        As visible on the right, the center of the blue sphere is never visible to the camera, Yellow spots are mostly visible and the actor stays close to the wall and as close to the player as possible
+                    </p>
+
+                    <h2>
+                        External Navigation Links
+                    </h2>
+                    <p>
+                        In my fifth semester project 'BrotherBlood' we decided for the NPC to always follow the player around and execute some actions themselves. In this particular example on the right, the NPC needs to wait for the player to unlock the elevator to use it without a Navigation link. The elevator connects to different parts of the navmesh and executes its navigation process by giving the navigation manager instructions.
+                        This way I was able to implement different Traversal methods like the elevator or destructible obstructions with instructions for the npc to follow. They work independent of another and are only searched through the pathfinding script in a manager object.
+                    </p>
+                </div>
+            </div>
+            <div class="npc-project-panel-images">
+                <video width="100%"  preload="metadata" autoplay loop muted >
+                    <source src="sources/EQS.mp4" type="video/mp4">
+                    Video not loaded
+                </video>
+                <video width="100%"  preload="metadata" autoplay loop muted >
+                    <source src="sources/Elevator.mp4" type="video/mp4">
+                    Video not loaded
+                </video>
+            </div>
+        </div>
+    </template>
+    
+    
+    
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
